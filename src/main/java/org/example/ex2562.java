@@ -7,18 +7,17 @@ public class ex2562 {
         Scanner sc = new Scanner(System.in);
         int [] arr = new int[9];
         int max=0;
-        int index = 0;
-        for (int i = 0; i < 9; i++) {
-            int n = sc.nextInt();
-            arr[i] = n;
+        int count = 0;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (max < arr[i]) {
                 max = arr[i];
-                index = i + 1;
+                count = i + 1;
             }
         }
             System.out.println(max);
-            System.out.println(index);
+            System.out.println(count);
     }
 }
