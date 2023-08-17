@@ -12,12 +12,12 @@ public class ex10810 {
             int I = sc.nextInt();
             int J = sc.nextInt();
             int K = sc.nextInt();
-            for (int j = I-1; j < J-1; J++) {
-                arr[j] = K;
+            for (int j = I - 1; j <J; j++) {
+                arr [j] = K;
             }
         }
         for (int k = 0; k < arr.length; k++) {
-            System.out.println(arr[k] + " ");
+            System.out.print(arr[k]+ " ");
         }
     }
 }
